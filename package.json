@@ -1,0 +1,17 @@
+{
+  "name": "number",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  // 代码托管的位置 --可选，建议必选，除非不打算维护
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxxx/xxxx.git"  //代码托管地址
+  },
+  "author": "yolo0612s",
+  "license": "ISC"
+}
