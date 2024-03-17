@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [],
   "repository": {
@@ -16,5 +17,9 @@
     "registry": "https://registry.npmjs.org"
   },
   "author": "yolo0612s",
-  "license": "ISC"
+  "files": ["lib/**/*"],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
 }
