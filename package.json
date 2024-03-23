@@ -1,11 +1,13 @@
 {
   "name": "@yolo-0612s/number",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean &&tsc -w"
   },
   "keywords": [],
   "repository": {
@@ -18,7 +20,7 @@
   },
   "author": "yolo0612s",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "license": "ISC",
   "devDependencies": {

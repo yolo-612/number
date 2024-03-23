@@ -1,13 +1,31 @@
 {
+  "include": ["./src", "./types"],
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES2015",
+    "module": "ES2015",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "resolveJsonModule": false,
     "declaration": true,
-    "outDir": "./dist",
-    "strict": true,
-    "lib": ["es6"],
+    "skipLibCheck": true,
+    
+    "typeRoots": [
+      "./typings",
+      "./types",
+      "./node_modules/@types"
+    ],
+    "baseUrl": "./src",
     "rootDir": "./src",
+    "outDir": "dist"
   },
-  "include": ["src", "test/Greeter.test.ts"],
-  "exclude": ["node_modules", "test", "dist"]
+  "compileOnSave": false
 }
